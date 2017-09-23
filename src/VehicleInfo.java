@@ -6,8 +6,16 @@ public class VehicleInfo {
         double odometerReading;
         double engineSize;
 
-    public VehicleInfo() {
+//    public VehicleInfo() {
+//
+//    }
 
+    public VehicleInfo () {
+        this.vin = vin;
+        this.odometerMilesTraveled = odometerMilesTraveled;
+        this.consumption = consumption;
+        this.odometerReading = odometerReading;
+        this.engineSize = engineSize;
     }
 
     public int getVin() {

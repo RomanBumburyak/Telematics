@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {          //you can only have this method once, it acts similarly to a server in JS.
         Scanner scanner = new Scanner(System.in);
-
-                                                   // get the information for the VehicleInfo from the command line
+        TelematicsService telematicsService = new TelematicsService();
+                                                                                  // get the information for the VehicleInfo from the command line
 
         System.out.println("Please enter the VIN number: ");
         String vininput = scanner.nextLine();
@@ -28,7 +28,7 @@ public class Main {
 
 
 
-        VehicleInfo vehicleinfo = new VehicleInfo();                          ////////This is my object
+        VehicleInfo vehicleinfo = new VehicleInfo();       ///new instance of a car, vehicle info ////////This is my object
         vehicleinfo.setVin(vin);
         vehicleinfo.setOdometerMilesTraveled(odometerMilesTraveled);
         vehicleinfo.setConsumption(consumption);
