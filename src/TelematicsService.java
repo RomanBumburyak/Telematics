@@ -13,6 +13,9 @@ public class TelematicsService {
         createInformation(vehicleInfo);
     }
 
+
+
+
     public void createCar(VehicleInfo vehicleInfo) {
         try {
             System.out.println(vehicleInfo);
@@ -21,7 +24,7 @@ public class TelematicsService {
             FileWriter fileWriter = new FileWriter(newFile);
             System.out.println(fileName);
 
-            ObjectMapper mapper = new ObjectMapper();              //serialization of Java Object into JSON
+            ObjectMapper mapper = new ObjectMapper();              //serialization of Java Object into JSON, aka Java -> JSON
             String json = mapper.writeValueAsString(vehicleInfo);
 
             fileWriter.write(json);
